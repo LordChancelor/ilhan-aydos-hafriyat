@@ -10,12 +10,20 @@ export default {
         // 'bedar-xl' : "1667px",
       },
       backgroundColor: {
-        'mainColor': "#212835",
+        'mainColor': "#252835",
         'mainHover': "#323c50",
       },
       textColor: {
-        'textColor': "#212835",
+        'textColor': "#512835",
         'textHover': "#323c50",
+      },
+      colors: {
+        industrialGray: '#1f1f1f',
+        cautionYellow: '#facc15',
+        steel: '#4b5563',
+      },
+      borderRadius: {
+        xl: '1rem',
       },
     },
   },

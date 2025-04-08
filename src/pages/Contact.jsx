@@ -6,20 +6,20 @@ import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
 
-const LinkStyles = `flex items-center gap-2 hover:text-white/65 transition-colors ease-linear`;
+const LinkStyles = `flex items-center gap-2 hover:text-yellow-400 transition-colors ease-linear`;
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isProfileLoading, setIsProfileLoading] = useState(true);
   return (
-    <div id="Contact" className={`${containerStyle}`}>
-      <PageTitle title={"Contact"} />
-      <div className="flex flex-col bedar-sc2:flex-row bg-mainColor rounded-xl overflow-hidden">
-        <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
+    <div id="Ulaşın" className={`${containerStyle}`}>
+      <PageTitle title={"Ulaşın"} />
+      <div className="flex flex-col bedar-sc2:flex-row bg-[#1f1f1f] rounded-xl overflow-hidden border-4 border-yellow-500 shadow-xl">
+        <div className="hidden bedar-sc2:flex justify-center items-center w-1/2 bg-black">
           <img
-            src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
+            src={`${import.meta.env.BASE_URL}bize-ulaşın.webp`}
             onLoad={() => setIsLoading(false)}
-            className={`${isLoading ? "skeleton w-96 h-80" : ""}`}
+            className={`${isLoading ? "skeleton w-96 h-80" : "w-full h-auto object-cover"}`}
             alt="contact-us-image"
           />
         </div>
@@ -27,42 +27,37 @@ const Contact = () => {
           <img
             onLoad={() => setIsProfileLoading(false)}
             src={AboutPage.authorProfile}
-            className={`bg-[#beb7e0] w-36 h-36 rounded-full border-2 border-white ${
+            className={`bg-zinc-700 w-36 h-36 rounded-full border-4 border-yellow-500 shadow-md ${
               isProfileLoading ? "skeleton" : ""
             }`}
             alt="author-profile"
           />
-          <h1 className="text-4xl bedar-sc2:text-5xl font-extrabold text-[#fedf89] my-4 text-center">
-            Contact Me
+          <h1 className="text-4xl bedar-sc2:text-5xl font-extrabold text-yellow-400 my-4 text-center">
+            Bize Ulaşın
           </h1>
-          <div className="text-center mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos autem
-            deserunt maiores quas facere quae qui perferendis iure, dolorem
-            temporibus ipsum fugit ullam eaque soluta cupiditate, eius et
-            officiis veniam.
+          <div className="text-center mb-4 text-zinc-300">
+            İşiniz hakkında detaylı bilgi almak için, iş planı yapmak için, işinize uygun kepçe bilgisi almak için, güncel fiyat listesi ve profesyonel hizmet için bize ulaşın.
           </div>
           <Link
             to={`mailto:${AboutPage.authorContactMail}`}
             className={LinkStyles}
           >
-            <MdEmail className="w-6 h-6" />{" "}
+            <MdEmail className="w-6 h-6" />
             <span>{AboutPage.authorContactMail}</span>
           </Link>
           <Link
-            to={`tel:${AboutPage.authorContactMail}`}
+            to={`tel:${AboutPage.authorContactNumber}`}
             className={LinkStyles}
           >
-            <FaPhoneAlt className="w-[18px] h-[18px]" />{" "}
+            <FaPhoneAlt className="w-[18px] h-[18px]" />
             <span>{AboutPage.authorContactNumber}</span>
           </Link>
-          <div className="flex justify-center gap-2 flex-wrap mt-4">
-            {footerIcons.map(
-              ({ name, component: IconComponent, link }, index) => (
-                <Link to={link} key={index} title={name}>
-                  <IconComponent className="h-9 w-9 rounded-lg fill-zinc-400 hover:fill-white transition-colors ease-linear" />
-                </Link>
-              )
-            )}
+          <div className="flex justify-center gap-3 flex-wrap mt-6">
+            {footerIcons.map(({ name, component: IconComponent, link }, index) => (
+              <Link to={link} key={index} title={name}>
+                <IconComponent className="h-9 w-9 rounded-lg text-zinc-400 hover:text-yellow-400 transition-colors ease-in-out" />
+              </Link>
+            ))}
           </div>
         </div>
       </div>
