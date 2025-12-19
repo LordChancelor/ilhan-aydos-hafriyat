@@ -19,17 +19,13 @@ The goal of the project was to digitize the company's inventory and provide a re
 * **Direct Contact Integration:** Features "Click-to-Call" and WhatsApp integration for immediate business leads.
 
 ## 🛠️ Tech Stack
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Styling:** Custom CSS with Flexbox/Grid architecture
-* **Deployment:** [Hosting Provider Name, e.g., Linux Hosting / cPanel]
-
-## 📸 Screenshots
-![Desktop View](path/to/screenshot_desktop.png)
-*Desktop Home View*
+* **Core:** JavaScript (ES6+), HTML5, CSS3
+* **Build Tool:** Vite (for optimized production bundling)
+* **Deployment:** Linux Shared Hosting (FTP Upload of `dist/` build)
 
 ## 🚀 Deployment
 The site is currently live and serving customers. Updates are pushed via this repository to ensure version control for the business assets.
 
 ---
-**Author:** [Salih Aydos]  
-**Contact:** [lixder@outlook.com]
+**Author:** Salih Aydos
+**Contact:** lixder@outlook.com
