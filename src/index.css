@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-    font-family: "Inter", sans-serif;
-    color: #212835;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    scroll-padding: 110px;
+html, body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Urbanist", sans-serif;
+  color: #212835;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding: 110px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -25,12 +23,12 @@ html, body{
   border-radius: 8px;
 }
 
-.skeleton{
+.skeleton {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
 }
-.skeleton::before{
+.skeleton::before {
   content: '';
   position: absolute;
   top: 0;
@@ -42,17 +40,18 @@ html, body{
   border-radius: 4px;
   background: linear-gradient(90deg, #eee, #dedede, #eee);
   background-size: 200%;
-  animation: skeleton .7s infinite linear reverse;
+  animation: skeleton 0.7s infinite linear reverse;
 }
 
 @keyframes skeleton {
-  0%{
+  0% {
     background-position: -100% 0;
   }
-  100%{
+  100% {
     background-position: 100% 0;
   }
 }
+
 body {
   background-image: url('/ankara-mini-kepce-kiralama.webp'); /* place this image in public/ */
   background-size: cover;
@@ -61,8 +60,55 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/urbanist-v15-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/urbanist-v15-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+/* ✅ Global Override for all bg-[#1f1f1f] */
+.bg-\[\#1f1f1f\] {
+  background-color: rgba(31, 31, 31, 0.8) !important;
+  backdrop-filter: blur(6px);
+}
+
+@layer utilities {
+  .container-industrial {
+    @apply bg-[#1f1f1f]/80 backdrop-blur-sm border border-yellow-500 rounded-xl shadow-xl;
+  }
+
+  .container-industrial-light {
+    @apply bg-[#2a2a2a]/80 backdrop-blur-sm border border-yellow-500 rounded-xl shadow-xl;
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out both;
 }
 
 

@@ -58,7 +58,12 @@ const imgLogo = `${import.meta.env.BASE_URL}bar-logo.webp`; // Replace with an i
 
 // Navigation Menu Items
 // This array defines the navigation menu items. Add or remove items as necessary.
-const navElements = ["Hakkında", "Makineler" ,"Galeri", "Ulaşın"];
+const navElements = [
+  { label: "Hakkında", path: "/hakkinda" },
+  { label: "Makineler", path: "/makineler" },
+  { label: "Galeri", path: "/galeri" },
+  { label: "Ulaşın", path: "/ulasin" },
+];
 
 // About Page Configuration
 // This object contains all the details for the "About" section of the portfolio.
@@ -66,8 +71,8 @@ const navElements = ["Hakkında", "Makineler" ,"Galeri", "Ulaşın"];
 const AboutPage = {
   authorProfile: `${import.meta.env.BASE_URL}logo.webp`, // Your profile image link
   authorDescription:
-    "Sektörde 30 yılı aşkın zamandır hizmet vermekteyiz yılların verdiği bilgi ve birikimin siz değerli müşterilerimize daha iyi hizmet vermek adına geliştirmeye ve dönüştürmeye  çalışmaktayız.", // Short bio or description about yourself
-  getInTouchUrl: "https://business.google.com/v/_/AKsrIN0cSp2zXPVQk0SUUID06H2IK2zcROjtC0qUSSYBq2ifMi9onw/143e/_?exp=1778401&myads=1", // URL for your contact or form page
+    "Sektörde 15+ yılı aşkın zamandır hizmet vermekteyiz yılların verdiği bilgi ve birikimin siz değerli müşterilerimize daha iyi hizmet vermek adına geliştirmeye ve dönüştürmeye  çalışmaktayız.", // Short bio or description about yourself
+  getInTouchUrl: "https://www.google.com/maps/place/Ankara+Mini+Kep%C3%A7e+Kiralama/@39.8235302,32.7093661,17z/data=!3m1!4b1!4m6!3m5!1s0x14d33f147d202ea1:0x4ce36fc47a2f2363!8m2!3d39.8235302!4d32.7093661!16s%2Fg%2F11mpml52cp?entry=ttu&g_ep=EgoyMDI1MDQxMy4wIKXMDSoASAFQAw%3D%3D", // URL for your contact or form page
   authorName: "İlhan Aydos Hafriyat", // Replace with your name
   profileImgTagLine: "Ankara mini kepçe kiralama", // Your tagline or job title
   authorContactMail: "ilhanaydos06@hotmail.com", // Your email address
@@ -108,7 +113,7 @@ const MachinesPage = [
   },
   {
     img: `${import.meta.env.BASE_URL}ankara-kepce-kiralama.webp`, // Certificate image URL
-    title: "3.5 Ton Ekskavatör", // Certificate title
+    title: "Bobcat", // Certificate title
     description: "Bina yıkım,güçlendirme,peyzaj ve drenaj işlerinde yüksek verim sağlar.      Yükseklik:251cm   Genişlik:170cm", // Short description of the certification
     issuedBy: "İlhan Aydos Hafriyat", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)

@@ -1,8 +1,9 @@
-//import About from "./About/About";
+import About from "./About/About";
 import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
-import Project from "./Project/Project";
 import PageTitle from "./PageTitle/PageTitle";
-import Certificate from "./Certificate/Certificate";
-
-export { Footer, Navbar, Project, PageTitle, Certificate};
+import Machines from "./Makineler/Makineler";
+import Gallery from "./Gallery/Gallery";
+import FAQSection from "../components/SSS/FAQSection";
+import LazyMap from "./LazyMap";
+export { About, Footer, Navbar, PageTitle, Machines, Gallery, FAQSection, LazyMap};

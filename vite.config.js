@@ -3,6 +3,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: '/', // ✅ your repo name
   plugins: [react()],
-  base: '/ilhanaydos-hafriyat/', // This will be dynamically updated by GitHub Actions
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+  },
 });

@@ -1,28 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ankaramakinekiralama.com/</loc>
-    <lastmod>2025-04-08</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ankaramakinekiralama.com/hakkinda</loc>
-    <lastmod>2025-04-08</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ankaramakinekiralama.com/makineler</loc>
-    <lastmod>2025-04-08</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ankaramakinekiralama.com/galeri</loc>
-    <lastmod>2025-04-08</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-04-17</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ankaramakinekiralama.com/ulasin</loc>
-    <lastmod>2025-04-08</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <priority>0.8</priority>
+  </url>
+  <!-- Bölgesel Sayfalar -->
+  <url>
+    <loc>https://ankaramakinekiralama.com/kecioren-mini-kepce-kiralama</loc>
+    <lastmod>2025-04-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ankaramakinekiralama.com/cankaya-mini-kepce-kiralama</loc>
+    <lastmod>2025-04-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ankaramakinekiralama.com/golbasi-mini-kepce-kiralama</loc>
+    <lastmod>2025-04-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ankaramakinekiralama.com/altindag-mini-kepce-kiralama</loc>
+    <lastmod>2025-04-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ankaramakinekiralama.com/incek-mini-kepce-kiralama</loc>
+    <lastmod>2025-04-17</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -6,7 +6,14 @@ const Footer = ({ activeElem, setActiveElem }) => {
     <div className="bg-[#1f1f1f] border-t-4 border-yellow-500 text-white flex bedar-sm:items-center justify-between flex-col-reverse bedar-sm:flex-row gap-3 bedar-sm:gap-0 px-5 bedar-sc1:px-20 py-6 mt-10 shadow-inner">
       <div>
         {imgLogo ? (
-          <img src={imgLogo} className="w-[120px] h-auto" />
+          <img 
+          src={imgLogo} 
+          alt="İlhan Aydos Hafriyat Logo – Ankara Mini Kepçe Kiralama"
+          className="w-[120px] h-[40px]"  // Set both width and height
+          width="120"
+          height="40"
+        />
+        
         ) : (
           <a
             href={`#${navElements[0]}`}
